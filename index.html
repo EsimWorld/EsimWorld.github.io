@@ -1,2 +1,29 @@
-<h1>테스트중
-</h1>
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<title>Index - 테스트</title>
+		<style>
+			body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", "Helvetica Neue", Arial; padding: 2rem; }
+			.btn { background:#0078d4; color:#fff; border:none; padding:0.6rem 1rem; font-size:1rem; border-radius:6px; cursor:pointer }
+			.btn:active { transform: translateY(1px) }
+		</style>
+	</head>
+	<body>
+		<h1>테스트중</h1>
+
+		<p>
+			아래 버튼을 누르면 같은 디렉터리에 있는 <code>test.html</code> 파일을 엽니다.
+		</p>
+
+		<button class="btn" id="openTest">테스트 페이지 열기</button>
+
+		<script>
+			document.getElementById('openTest').addEventListener('click', function () {
+				// 새 탭에서 열려면 window.open('test.html', '_blank') 사용
+				window.location.href = 'test.html';
+			});
+		</script>
+	</body>
+</html>
